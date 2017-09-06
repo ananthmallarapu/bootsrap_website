@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>RSS-curate content</title>
+
+
+		<meta name="description" content="curated blogs ,articles,videos"
+		name=”description” content="personalise content according to your style">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<link rel="stylesheet" href="includes/css/font-awesome/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+		
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.min.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+	</head><!--head-ending-->
+	
+	<!--body starting-->
+	<body>
+		<!--wrapper container-->
+		<div class="container" id="main">
+		<!--fixed header-->
+			<div class="navbar navbar-fixed-top" id="menubar">
+
+				<div class="container">
+					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+	
+					<!--page logo-->
+						<a class="navbar-brand" href="/"><img src="images/logo.png" alt="logo"/>
+						</a>
+
+						<div class="nav-collapse collapse navbar-responsive-collapse">
+							<ul class="nav navbar-nav">
+								
+								<li >
+								<a href="#">
+								favourites</a>
+								</li>
+								<li>
+								<a href ="#">blogs</a>
+								</li>
+
+								<li class="dropdown">
+									<a href ="#" class="dropdown-toggle" data-toggle="dropdown"> 
+								
+									articles
+									<strong class="caret"></strong>
+									</a>
+									<ul class="dropdown-menu">
+										<li>1</li>
+										<li class="divider"></li>
+										<li>2</li>
+										<li class="divider"></li>
+										<li>3</li>
+										<li class="divider"></li>
+										<li>4</li>
+										<li class="divider"></li>
+										<li>5</li>
+									</ul>
+								</li>
+
+
+								<li><a href ="#">videos</a></li>
+								<li><a href ="#">social media</a></li>
+								<li><a href ="#">news</a></li>
+							</ul>	
+
+
+							<!-- search bar-->
+							<form class="navbar-form pull-left">
+								<input type="text" class="form-control" name="searchbar" id="searchbar" placeholder="seach the site">
+								<button type="submit" class="btn btn-default" ><span class="glyphicon glyphicon-search"></span></button>
+							</form><!--searchbar form ending-->
+
+							<ul class="nav navbar-nav pull-right">
+								<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class= "glyphicon glyphicon-user" id ="user-logo"> </span>my account<strong class="caret"></strong></a>
+									<ul class="dropdown-menu">
+										<a href="#modal-profile" role="button"  data-toggle="modal"><li><span class="glyphicon glyphicon-info-sign" id="profile-logo"></span>profile</li></a>
+										<li class="divider"></li>
+										<li><span class="glyphicon glyphicon-envelope" id="subscriptions-logo"></span>my subscriptions</li>
+										<li class="divider"></li>
+										<li><span class="glyphicon glyphicon-book" id="inbox-logo"></span>inbox </li>
+
+										<li class="divider"></li>
+										<li ><span class="glyphicon glyphicon-off" id="logout-logo"> </span>logout</li>
+									</ul>
+								</li>
+							</ul>
+						</div> <!--responsive collapsse ending-->
+				</div><!--navmenu container ending-->
+			</div><!--navbar ending-->
+
+					
+				
+
+			<div class="carousel slide" id="myCarousel">
+
+			<!-- Indicators -->
+				<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+				<li data-slide-to="1" data-target="#myCarousel"></li>
+				<li data-slide-to="2" data-target="#myCarousel"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active" id="slide1">
+						<div class="carousel-caption">
+							<h4>Blogs and Articles</h4>
+							<p>curated blogs and articles of your choice</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+			
+					<div class="item" id="slide2">
+						<div class="carousel-caption">
+							<h4>social media</h4>
+							<p>all your social media content at one place</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+			
+					<div class="item" id="slide3">
+						<div class="carousel-caption">
+							<h4>NEWS</h4>
+							<p>see only the news which you are interested in</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+				</div><!-- carousel-inner -->
+		
+				<!-- Controls -->
+				<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+
+			</div><!-- end myCarousel -->
+
+
+			<div class="row" id="content_heading">
+				<div class="col-12">
+					
+
+					<div class="well">
+						<div class="page-header">
+							<h1>annual  subscription  </h1>
+						</div><!-- end page-header -->
+			
+						<p class="lead">register now and get 50% discount and an addittional year subscription</p>
+			
+			
+					</div><!-- end well -->
+				</div><!-- content heading col-12 ending-->
+			</div> <!--content heading  ending-->
+
+
+			<div class="row" id="Recommended-Heading">
+					<div class="col-12">
+						<h2>recommended</h2>
+						<p class="lead">based on your subscriptions.</p>
+					</div><!-- end col-12 -->
+			</div><!-- end featuresHeading -->
+
+			<div class="row" id="three_column_row">
+					
+							<div class="col-sm-4 feature">
+								<div class="panel">
+									<div class="panel-heading">
+										<h3 class="panel-title">trending</h3>
+									</div><!-- end panel-heading -->
+									<!--<img src="images/badge_html5.jpg" alt="HTML5" class="img-circle"> -->
+			
+									<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+			
+										<a href="#" target="_blank" class="btn btn-warning btn-block">subscribe</a>
+								</div><!-- end panel -->
+							</div><!-- end  col-sm-4-feature -->
+					
+					
+							<div class="col-sm-4 feature">
+								<div class="panel">
+									<div class="panel-heading">
+										<h3 class="panel-title">NEW</h3>
+									</div><!-- end panel-heading -->
+										<!--<img src="images/badge_html5.jpg" alt="HTML5" class="img-circle"> -->
+			
+									<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+			
+										<a href="#" target="_blank" class="btn btn-warning btn-block">subscribe</a>
+								</div><!-- end panel -->
+							</div><!-- end  col-sm-4-feature -->
+					
+					
+							<div class="col-sm-4 feature">
+								<div class="panel">
+									<div class="panel-heading">
+										<h3 class="panel-title">popular</h3>
+									</div><!-- end panel-heading -->
+										<!--<img src="images/badge_html5.jpg" alt="HTML5" class="img-circle"> -->
+			
+									<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+			
+										<a href="#" target="_blank" class="btn btn-warning btn-block">subscribe</a>
+								</div><!-- end panel -->
+							</div><!-- end  col-sm-4-feature -->
+					
+			</div> <!--3 column ending  ending-->
+
+			<div class="row" id="vertical_column_row">
+			
+				<div class="col-sm-6">
+					<div class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+							<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+							<li><a href="#tab3" data-toggle="tab">Section 3</a></li>
+						</ul>
+				<div class="tab-content">
+				<div class="tab-pane active" id="tab1">
+					<h3>row 1</h3>
+					<p>
+						 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+						 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+						 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div><!--tab1 ending-->
+				<div class="tab-pane " id="tab2">
+					<h3>row 2</h3>
+					<p>
+						 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div><!--tab2 ending-->
+				<div class="tab-pane " id="tab3">
+					<h3>row 3</h3>
+					<p>
+						 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div><!--tab3 ending-->
+				</div><!--tab contennts ending-->
+				</div><!-- tabbale class ending-->
+
+				</div><!-- column-6-ending-->
+
+				<div class="col-sm-6 " id="editor-choice">
+					<h2>Editor choice</h2>
+					<img src="images/spacex.jpg" alt="spacex"/>
+					<p>
+						On August 14, 2017, SpaceX successfully launched its twelfth Commercial Resupply Services mission (CRS-12) from Launch Complex 39A (LC-39A) at NASA’s Kennedy Space Center, Florida. Liftoff occurred at 12:31 p.m.
+					</p>
+
+					<h4>other editor choices</h4>
+						<div class="list-group">
+							
+							<a  href= "#" class="list-group-item">
+								<h4 class="list-group-item-heading">editor-choice-2</h4>
+									<p class="list-group-item-text">  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									</p>
+							</a>
+							<a  href= "#" class="list-group-item">
+								<h4 class="list-group-item-heading">editor-choice-3</h4>
+									<p class="list-group-item-text">  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									</p>
+							</a>
+							<a  href= "#" class="list-group-item">
+								<h4 class="list-group-item-heading">editor-choice-4</h4>
+									<p class="list-group-item-text">  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									</p>
+							</a>
+							
+						</div><!--list -group ending-->
+
+					
+				</div> <!-- column 6 ending-->
+			
+			</div> <!--vertical column ending-->
+
+			<!-- modal form-->
+			<div class="modal fade" id="modal-profile">
+					<div class="modal-dialog">
+						<div class="modal-content">
+								<div class="modal-header">
+									<button class="close" data-dismiss="modal">&times;</button>
+				
+									<h4 class="modal-title">Profile</h4>
+								</div><!-- end modal-header -->
+
+
+								<div class="modal-body">
+									<div class="row">
+				
+										<div class=" col-sm-4 "><p><strong>full name</strong></p></div>
+										<div class=" col-sm-8 "><p>Ananth Mallarapu</p>
+										</div>
+									</div>
+									<div class="row">
+				
+										<div class=" col-sm-4 "><p><strong>Email</strong></p></div>
+										<div class=" col-sm-8 "><p>ananthmallarapu@gmail.com</p></div>
+									
+									</div>
+
+									<div class="row">
+				
+										<div class=" col-sm-4 "><p><strong>contact address</strong></p></div>
+										<div class=" col-8 "><p>224 ,baker street  Marylebone, London NW1 5RT, UK</p></div>
+									
+									</div>
+									<div class="row">
+				
+										<div class=" col-sm-4 "><p><strong>mobile</strong></p></div>
+										<div class=" col-sm-8 "><p>7306117896</p></div>
+									
+									</div>
+									
+									<hr>
+				
+										<h2><strong>Update Details</strong></h2>
+
+				
+										<form class="form-horizontal">
+											<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Name</label>
+													<div class="col-lg-10">
+																	<input class="form-control" id="inputName" placeholder="Name" type="text">
+													</div>
+											</div>
+					
+											<div class="form-group">
+												<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+												<div class="col-lg-10">
+														<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-lg-2 control-label" for="contact">contact</label>
+												<div class="col-lg-10">
+														<input class="form-control" id="contact" placeholder="contact" type="text">
+												</div>
+											</div>
+					
+											<div class="form-group">
+													<label class="col-lg-2 control-label" for="address">Contact Address</label>
+													<div class="col-lg-10">
+															<textarea class="form-control" id="address" placeholder="enter address" rows="3"></textarea>
+															
+													</div>
+											</div>
+										</form>
+								</div><!-- end modal-body -->
+
+
+			
+								<div class="modal-footer">
+									<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> 
+									<a  href= "#" button class="btn btn-primary pop" data-toggle="popover" data-placement="top" data-original-title="Error " data-content="invalid-data">Save changes</button></a>
+								</div><!-- end modal-footer -->
+						</div><!-- end modal-content -->
+					</div><!-- end modal-dialog -->
+			</div><!-- end Modal-profile -->
+		</div><!--container  ending-->
+
+		<footer>
+			<div class="container">
+				<div class="col-12">
+
+		  			<div class="col-sm-4 feature">
+
+						<h4><span class="glyphicon glyphicon-map-marker" ></span>Our Location</h4>
+
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.596695091536!2d-0.15899364921866013!3d51.52061471745888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ace9a2e67d7%3A0xd458de8d0fdc498e!2sBaker+St%2C+Marylebone%2C+London%2C+UK!5e0!3m2!1sen!2sin!4v1504690317362" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+		 			 </div><!--column-4-ending-->
+
+		  
+					<!-- policy-block-->
+					<section>
+					<ul class="policy col-sm-4 feature">
+
+						<h2>terms of use</h2>
+
+						<li><a href="#"> privacy policy</a></li>
+						<li><a href="#">cookie policy</a></li>
+						<li><a href="#">copyright policy</a></li>
+						<li><a href="#">data policy</a></li>
+					</ul>
+					</section>
+					<!-- about-block-->
+					<section>
+					<ul class="about col-sm-4 feature ">
+
+						<h2>about us</h2>
+
+						<li><a href="#"> press</a></li>
+						<li><a href="#">careers</a></li>
+						<li><a href="#">legal</a></li>
+						<li><a href="#">contact us</a></li>
+					</ul>
+					</section>
+					</div>
+
+		  
+		 
+					<!-- social-plugin-block-->
+
+					<div class="col-12">
+
+						<ul class="socialicon pull-left">
+
+						<section>
+
+						<h1>follow us</h1>
+				
+						<li> <a href="https://facebook.com"><button type="button" ><i class="fa fa-facebook fa-3x"></i></button></li></a></li>
+						<li><a href="https://plus.google.com"><button type="button" ><i class="fa fa-google-plus fa-3x"></i></button></a></li>
+						<li> <a href="https://twitter.com"><button type="button" ><i class="fa fa-twitter fa-3x "></i></button></a></li>
+						<li><a href="https://linkedin.com"><button type="button" ><i class="fa fa-linkedin fa-3x"></i></button></a></li>
+					
+						</section>
+
+						</ul>
+						<div class=" pull-left" id="copyright">
+							<h2> copyrights &copy; 2017 </h2>
+						</div>
+				</div>
+			</div><!-- footer container ending-->
+		</footer><!--footer ending-->
+	
+
+		<!-- All Javascript at the bottom of the page for faster page loading -->
+			
+		<!-- First try for the online version of jQuery-->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		
+		<!-- If no online access, fallback to our hardcoded version of jQuery -->
+		<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+		
+		<!-- Bootstrap JS -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- Custom JS -->
+		<script src="includes/js/script.js"></script>
+	</body>
+</html>
+
